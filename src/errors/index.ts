@@ -5,3 +5,9 @@ export class InvalidReportCreationTimeError extends Error {
   }
 }
 
+export class InvalidTurnaroundTimeError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = this.constructor.name;
+  }
+}

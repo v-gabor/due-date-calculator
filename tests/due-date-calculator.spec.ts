@@ -57,11 +57,11 @@ describe("Due date calculator test", () => {
 
     expect(result.resolvedAt).to.be.equal("2020-08-20 09:59");
 
-    // result = CalculateDueDate({
-    //   createdAt: "2020-08-14 16:59",
-    //   turnaroundTime: 1,
-    // });
+    result = CalculateDueDate({
+      createdAt: "2020-08-14 16:59",
+      turnaroundTime: 1,
+    });
 
-    // expect(result.resolvedAt).to.be.equal("2020-08-17 08:59");
+    expect(result.resolvedAt).to.be.equal("2020-08-17 08:59");
   });
 });
